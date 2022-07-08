@@ -35,9 +35,7 @@ const Post = () => {
       />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
-          This impressive paella is a perfect party dish and a fun meal to cook
-          together with your guests. Add 1 cup of frozen peas along with the
-          mussels, if you like.
+          This impressive waterfalls is just 3 kilometers away from my city and it isn't even hard to reach. You can go there by riding a jeepney ride for 10 minutes and another 30 minutes for trekking.
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
