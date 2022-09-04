@@ -12,14 +12,16 @@ import {
   Typography,
 } from "@mui/material";
 import React, { useState } from "react";
+import profile from "../images/profile_photo.jpg"
 
-const StyledToolbar = styled(Toolbar)({
+const StyledToolbar = styled(Toolbar)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === 'dark' ? '#202232' : '#1760a5',
   display: "flex",
   justifyContent: "space-between",
-});
+}));
 
 const Search = styled("div")(({ theme }) => ({
-  backgroundColor: "white",
+  backgroundColor: theme.palette.mode === 'dark' ? '#24273B' : '#fff',
   padding: "0 10px",
   borderRadius: theme.shape.borderRadius,
   width: "40%",
@@ -63,7 +65,7 @@ const Navbar = () => {
           </Badge>
           <Avatar
             sx={{ width: 30, height: 30 }}
-            src="https://images.pexels.com/photos/846741/pexels-photo-846741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            src={profile}
             onClick={(e) => setOpen(true)}
           />
         </Icons>

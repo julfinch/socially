@@ -3,153 +3,218 @@ import {
   AvatarGroup,
   Box,
   Divider,
-  ImageList,
-  ImageListItem,
+  IconButton,
   List,
   ListItem,
+  Stack,
   ListItemAvatar,
   ListItemText,
   Typography,
+  styled,
+  Paper,
 } from "@mui/material";
+import FavoriteTwoToneIcon from '@mui/icons-material/FavoriteTwoTone';
+import SmsTwoToneIcon from '@mui/icons-material/SmsTwoTone';
+import AccountCircleTwoToneIcon from '@mui/icons-material/AccountCircleTwoTone';
+import VisibilityTwoToneIcon from '@mui/icons-material/VisibilityTwoTone';
 import React from "react";
+import apolinario from "../images/apolinario.jpg";
+import segunda from "../images/segunda.jpg";
+import avatar1 from "../images/avatar1.jpg";
+import avatar2 from "../images/avatar2.jpg";
+import avatar3 from "../images/avatar3.jpg";
+import avatar4 from "../images/avatar4.jpg";
+import avatar5 from "../images/avatar5.jpg";
+
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === 'dark' ? '#151728' : '#fff',
+  color: theme.palette.text.secondary,
+}));
+
+const Stat = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === 'dark' ? '#24273B' : '#fff',
+  color: theme.palette.text.secondary,
+  height: '10vh',
+}));
+
+const Convo = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === 'dark' ? '#24273B' : '#fff',
+  color: theme.palette.text.secondary,
+}));
+
+const Conversations = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === 'dark' ? '#151728' : '#fff',
+}));
 
 const Rightbar = () => {
   return (
-    <Box flex={2} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
+    <Item flex={1.6} sx={{width: 300, padding: 2, display: { xs: "none", sm: "block" } }}>
       <Box position="fixed" width={300}>
-        <Typography variant="h6" fontWeight={100}>
+        <Typography sx={{ fontSize: '1rem', fontWeight: 'bold', marginTop: '-10px' }}>
           Online Friends
         </Typography>
         <AvatarGroup max={7}>
           <Avatar
-            alt="Remy Sharp"
-            src="https://material-ui.com/static/images/avatar/1.jpg"
+            alt="online friends"
+            src={avatar1}
           />
           <Avatar
-            alt="Travis Howard"
-            src="https://material-ui.com/static/images/avatar/2.jpg"
+            alt="online friends"
+            src={avatar2}
           />
           <Avatar
-            alt="Cindy Baker"
-            src="https://material-ui.com/static/images/avatar/3.jpg"
+            alt="online friends"
+            src={avatar3}
           />
-          <Avatar alt="Agnes Walker" src="" />
+          <Avatar alt="Agnes Walker" src={apolinario} />
           <Avatar
-            alt="Trevor Henderson"
-            src="https://material-ui.com/static/images/avatar/6.jpg"
-          />
-          <Avatar
-            alt="Trevor Henderson"
-            src="https://material-ui.com/static/images/avatar/7.jpg"
+            alt="online friends"
+            src={avatar4}
           />
           <Avatar
-            alt="Trevor Henderson"
-            src="https://material-ui.com/static/images/avatar/8.jpg"
+            alt="online friends"
+            src={avatar5}
           />
           <Avatar
-            alt="Trevor Henderson"
-            src="https://material-ui.com/static/images/avatar/7.jpg"
+            alt="online friends"
+            src={avatar5}
           />
           <Avatar
-            alt="Trevor Henderson"
-            src="https://material-ui.com/static/images/avatar/8.jpg"
+            alt="online friends"
+            src={avatar5}
+          />
+          <Avatar
+            alt="online friends"
+            src={avatar5}
           />
         </AvatarGroup>
-        <Typography variant="h6" fontWeight={100} mt={2} mb={2}>
-          Latest Photos
+        <Typography sx={{ fontSize: '1rem', fontWeight: 'bold', }} mt={1} >
+          Weekly Stats
         </Typography>
-        <ImageList cols={3} rowHeight={100} gap={5}>
-          <ImageListItem>
-            <img
-              src="https://material-ui.com/static/images/image-list/breakfast.jpg"
-              alt=""
-            />
-          </ImageListItem>
-          <ImageListItem>
-            <img
-              src="https://material-ui.com/static/images/image-list/burgers.jpg"
-              alt=""
-            />
-          </ImageListItem>
-          <ImageListItem>
-            <img
-              src="https://material-ui.com/static/images/image-list/camera.jpg"
-              alt=""
-            />
-          </ImageListItem>
-        </ImageList>
-        <Typography variant="h6" fontWeight={100} mt={2}>
+
+        <Box display="grid" gridTemplateColumns="repeat(12, 1fr)" gap={1}>
+            <Box gridColumn="span 6">
+                <Stat sx={{ display: 'grid'}}>
+                  <Stack direction="row" alignItems="center" justifyContent="space-evenly">
+                      <IconButton aria-label="message me" color="primary" size="small" sx= {{textAlign: 'right', border: '1px solid #1760a5', borderRadius: '50px'}}>
+                        <FavoriteTwoToneIcon fontSize="small"/>
+                      </IconButton>
+                      <Box>
+                      <Typography fontWeight="bold">
+                        761,124
+                      </Typography>
+                      <Typography fontSize="0.7rem">
+                        Weekly Likes
+                      </Typography>
+                      </Box>
+                  </Stack>
+                </Stat>
+            </Box>
+            <Box gridColumn="span 6">
+              <Stat sx={{ display: 'grid'}}>
+                  <Stack direction="row" alignItems="center" justifyContent="space-evenly">
+                      <IconButton aria-label="message me" color="primary" size="small" sx= {{textAlign: 'right', border: '1px solid #1760a5', borderRadius: '50px'}}>
+                        <SmsTwoToneIcon fontSize="small"/>
+                      </IconButton>
+                      <Box>
+                      <Typography fontWeight="bold">
+                        12,232
+                      </Typography>
+                      <Typography fontSize="0.7rem">
+                        Comments
+                      </Typography>
+                      </Box>
+                  </Stack>
+              </Stat>
+            </Box>
+            <Box gridColumn="span 6">
+              <Stat sx={{ display: 'grid'}}>
+                  <Stack direction="row" alignItems="center" justifyContent="space-evenly">
+                      <IconButton aria-label="message me" color="primary" size="small" sx= {{textAlign: 'right', border: '1px solid #1760a5', borderRadius: '50px'}}>
+                        <AccountCircleTwoToneIcon fontSize="small"/>
+                      </IconButton>
+                      <Box>
+                      <Typography fontWeight="bold">
+                        2,000
+                      </Typography>
+                      <Typography fontSize="0.7rem">
+                        New Followers
+                      </Typography>
+                      </Box>
+                  </Stack>
+              </Stat>
+            </Box>
+            <Box gridColumn="span 6">
+              <Stat sx={{ display: 'grid'}}>
+                    <Stack direction="row" alignItems="center" justifyContent="space-evenly">
+                      <IconButton aria-label="message me" color="primary" size="small" sx={{textAlign: 'right', border: '1px solid #1760a5', borderRadius: '50px'}}>
+                        <VisibilityTwoToneIcon fontSize="small"/>
+                      </IconButton>
+                      <Box>
+                      <Typography fontWeight="bold">
+                        14M+
+                      </Typography>
+                      <Typography fontSize="0.7rem">
+                        Live Views 
+                      </Typography>
+                      </Box>
+                  </Stack>
+              </Stat>
+            </Box>
+        </Box>
+
+        <Typography sx={{ fontSize: '1rem', fontWeight: 'bold', }} mt={1}>
           Latest Conversations
         </Typography>
-        <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+
+        <Convo sx={{ borderRadius: '10px',width: '100%', maxWidth: 360, marginTop: '-1px' }}>
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
-          <Avatar alt="Remy Sharp" src="https://material-ui.com/static/images/avatar/3.jpg" />
+          <Avatar alt="Segunda Katigbak" src={segunda} />
         </ListItemAvatar>
         <ListItemText
-          primary="Brunch this weekend?"
+          primary="Ikaw lang ang nag-iisang babaeng mahal ko…pramis 💖❤😘"
           secondary={
-            <React.Fragment>
+            <>
               <Typography
                 sx={{ display: 'inline' }}
                 component="span"
                 variant="body2"
                 color="text.primary"
               >
-                Ali Connors
+                to Segunda, Leonor Valenzuela, Leonor Rivera, Consuelo, O-Sei San, Gertrude, Nelly, Suzanne and Josephine
               </Typography>
-              {" — I'll be in your neighborhood doing errands this…"}
-            </React.Fragment>
+              {" — Weh?🤪...See More"}
+            </>
           }
         />
       </ListItem>
-      <Divider variant="inset" component="li" />
+      
+      <Divider variant="inset" component="li" sx={{listStyleType: 'none'}}/>
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
-          <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
+          <Avatar alt="Apolinario Mabini" src={apolinario} />
         </ListItemAvatar>
-        <ListItemText
-          primary="Summer BBQ"
+        <ListItemText 
+          primary="Bruv, galing mo mag-breakdance kagabi 😮👏"
           secondary={
-            <React.Fragment>
+            <>
               <Typography
                 sx={{ display: 'inline' }}
                 component="span"
                 variant="body2"
                 color="text.primary"
               >
-                to Scott, Alex, Jennifer
+                Apolinario Mabini
               </Typography>
-              {" — Wish I could come, but I'm out of town this…"}
-            </React.Fragment>
+              {" — Uhhmm...sure ka ako yun? 😵🤷‍♂️"}
+            </>
           }
         />
       </ListItem>
-      <Divider variant="inset" component="li" />
-      <ListItem alignItems="flex-start">
-        <ListItemAvatar>
-          <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />
-        </ListItemAvatar>
-        <ListItemText
-          primary="Oui Oui"
-          secondary={
-            <React.Fragment>
-              <Typography
-                sx={{ display: 'inline' }}
-                component="span"
-                variant="body2"
-                color="text.primary"
-              >
-                Sandra Adams
-              </Typography>
-              {' — Do you have Paris recommendations? Have you ever…'}
-            </React.Fragment>
-          }
-        />
-      </ListItem>
-    </List>
+    </Convo>
       </Box>
-    </Box>
+    </Item>
   );
 };
 

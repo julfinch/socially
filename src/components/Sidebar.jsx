@@ -16,20 +16,27 @@ import {
   ListItemIcon,
   ListItemText,
   Switch,
+  styled,
+  Paper,
 } from "@mui/material";
 import React from "react";
 
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === 'dark' ? '#151728' : '#fff',
+  color: theme.palette.text.secondary,
+}));
+
 const Sidebar = ({mode,setMode}) => {
   return (
-    <Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
+    <Item flex={1} pt={1} sx={{width: 170, display: { xs: "none", sm: "block" } , '& .MuiTypography-root': {margin: 0}, '& .css-dz87jt': {paddingTop: '16px'}}}>
       <Box position="fixed">
-        <List>
+        <List sx={{'& .MuiTypography-root': {fontSize: '0.8rem'}}}>
           <ListItem disablePadding>
             <ListItemButton component="a" href="#home">
               <ListItemIcon>
                 <Home />
               </ListItemIcon>
-              <ListItemText primary="Homepage" />
+              <ListItemText primary="Home" />
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
@@ -37,7 +44,7 @@ const Sidebar = ({mode,setMode}) => {
               <ListItemIcon>
                 <Article />
               </ListItemIcon>
-              <ListItemText primary="Pages" />
+              <ListItemText primary="Latest News" />
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
@@ -90,7 +97,7 @@ const Sidebar = ({mode,setMode}) => {
           </ListItem>
         </List>
       </Box>
-    </Box>
+    </Item>
   );
 };
 

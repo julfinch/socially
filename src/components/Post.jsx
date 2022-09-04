@@ -9,14 +9,24 @@ import {
   Checkbox,
   IconButton,
   Typography,
+  Paper,
+  styled
 } from "@mui/material";
+import profile from "../images/profile_photo.jpg";
+import post from "../images/latest_4.jpg";
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === 'dark' ? '#151728' : '#fff',
+  ...theme.typography.body2,
+  padding: theme.spacing(0),
+  color: theme.palette.text.secondary,
+}));
+
 const Post = () => {
   return (
-    <Card sx={{ margin: 5 }}>
+    <Item>
       <CardHeader
         avatar={
-          <Avatar sx={{ bgcolor: "red" }} aria-label="recipe">
-            R
+          <Avatar src={profile} aria-label="profile photo">
           </Avatar>
         }
         action={
@@ -24,21 +34,21 @@ const Post = () => {
             <MoreVert />
           </IconButton>
         }
-        title="John Doe"
-        subheader="September 14, 2022"
+        title="José Protasio Rizal Mercado y Alonso Realonda"
+        subheader="November 14, 1891"
       />
       <CardMedia
         component="img"
         height="20%"
-        image="https://images.pexels.com/photos/4534200/pexels-photo-4534200.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        image={post}
         alt="Paella dish"
       />
-      <CardContent>
+      <CardContent  sx={{marginBottom: '-20px'}}>
         <Typography variant="body2" color="text.secondary">
-          This impressive waterfalls is just 3 kilometers away from my city and it isn't even hard to reach. You can go there by riding a jeepney ride for 10 minutes and another 30 minutes for trekking.
+          Tokyo is so advanced they already have cars during my time. Before the Japanese even dared to expand Imperial Japan in the greater East region of Asia, this Filipino has already infiltrated the country to seek for love. Of course, this is all but a dream unless I time-travelled to it.
         </Typography>
       </CardContent>
-      <CardActions disableSpacing>
+      <CardActions disableSpacing sx={{paddingBottom: '-30px'}}>
         <IconButton aria-label="add to favorites">
           <Checkbox
             icon={<FavoriteBorder />}
@@ -49,7 +59,7 @@ const Post = () => {
           <Share />
         </IconButton>
       </CardActions>
-    </Card>
+    </Item>
   );
 };
 
