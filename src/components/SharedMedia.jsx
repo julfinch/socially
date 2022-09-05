@@ -13,17 +13,13 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-const Img = styled('img')({
-  objectFit: 'stretch',
-  width: '30px',
-  height: '30px',
-});
-
 const Groups = () => {
   return (
     <>
       <Item>
-        <Box pl={1} pr={1} sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+        
+        <List aria-label="shared media" sx={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '95%' }}>
+        <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
           <Typography sx={{ fontSize: '1rem', fontWeight: 'bold', }}>
             Media
           </Typography>
@@ -31,11 +27,10 @@ const Groups = () => {
             See all
           </Typography>
         </Box>
-        <List aria-label="shared media">
           <ListItem disablePadding sx={{margin: '-11px'}}>
             <ListItem>
               
-              <DescriptionIcon fontSize={'small'}/>
+              <DescriptionIcon fontSize={'small'} sx={{ marginLeft: '-6px'}}/>
              
               <Box ml={1}>
               <Typography sx={{ fontSize: '0.8rem',   }}>
@@ -50,7 +45,7 @@ const Groups = () => {
           <ListItem disablePadding sx={{margin: '-11px'}}>
             <ListItem>
              
-              <AudiotrackIcon fontSize={'small'}/>
+              <AudiotrackIcon fontSize={'small'} sx={{ marginLeft: '-6px'}}/>
               
               <Box ml={1}>
               <Typography sx={{ fontSize: '0.8rem',  }}>
@@ -65,7 +60,7 @@ const Groups = () => {
           <ListItem disablePadding sx={{margin: '-11px'}}>
             <ListItem>
              
-              <PhotoIcon fontSize={'small'}/>
+              <PhotoIcon fontSize={'small'} sx={{ marginLeft: '-6px'}}/>
               
               <Box ml={1}>
               <Typography sx={{ fontSize: '0.8rem',  }}>
@@ -80,7 +75,7 @@ const Groups = () => {
           <ListItem disablePadding sx={{margin: '-11px'}}>
             <ListItem>
               
-              <VideoFileIcon fontSize={'small'}/>
+              <VideoFileIcon fontSize={'small'} sx={{ marginLeft: '-6px'}}/>
               
               <Box ml={1}>
               <Typography sx={{ fontSize: '0.8rem',  }}>

@@ -25,13 +25,14 @@ const Groups = () => {
   return (
     <>
       <Item flex={1}>
-        <Box pl={1} pr={1} sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+        
+        <List aria-label="about me" >
+          <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
           <Typography sx={{ fontSize: '1rem', fontWeight: 'bold', }}>
             Groups
           </Typography>
           <MoreHorizOutlinedIcon/>
         </Box>
-        <List aria-label="about me" >
           <ListItem disablePadding>
             <ListItem>
               <ListItemIcon>
