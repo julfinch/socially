@@ -8,7 +8,7 @@ import image1 from "../images/latest_1.jpg";
 import image2 from "../images/latest_2.png";
 import image3 from "../images/latest_3.jpg";
 import image4 from "../images/latest_4.jpg";
-import image5 from "../images/latest_5.jpg";
+import image5 from "../images/latest_5.png";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#151728' : '#fff',
