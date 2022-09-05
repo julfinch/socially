@@ -25,13 +25,11 @@ const Groups = () => {
       <Item>
         <Box pl={1} pr={1} sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
           <Typography sx={{ fontSize: '1rem', fontWeight: 'bold', }}>
-            Shared Media
+            Media
           </Typography>
-          <Button>
-          <Typography sx={{ fontSize: '0.8rem', textDecoration:'underline',}}>
+          <Typography color="primary" sx={{ fontSize: '0.8rem', textDecoration:'underline',}}>
             See all
           </Typography>
-          </Button>
         </Box>
         <List aria-label="shared media">
           <ListItem disablePadding sx={{margin: '-11px'}}>
