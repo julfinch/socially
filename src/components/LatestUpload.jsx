@@ -13,7 +13,7 @@ import image5 from "../images/latest_5.png";
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#151728' : '#fff',
   ...theme.typography.body2,
-  padding: theme.spacing(0),
+  padding: theme.spacing(1),
   height: '25vh',
   color: theme.palette.text.secondary,
 }));

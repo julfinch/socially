@@ -1,5 +1,5 @@
 import React from "react";
-import { List, ListItem, Button, Typography, Box, Paper, styled } from "@mui/material";
+import { List, ListItem, Divider, Typography, Box, Paper, styled } from "@mui/material";
 import DescriptionIcon from '@mui/icons-material/Description';
 import AudiotrackIcon from '@mui/icons-material/Audiotrack';
 import PhotoIcon from '@mui/icons-material/Photo';
@@ -19,7 +19,7 @@ const Groups = () => {
       <Item>
         
         <List aria-label="shared media" sx={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '95%' }}>
-        <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+        <Box sx={{ marginBottom: '-6px', display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
           <Typography sx={{ fontSize: '1rem', fontWeight: 'bold', }}>
             Media
           </Typography>
@@ -27,6 +27,7 @@ const Groups = () => {
             See all
           </Typography>
         </Box>
+        <Divider component="li" />
           <ListItem disablePadding sx={{margin: '-11px'}}>
             <ListItem>
               
@@ -42,6 +43,7 @@ const Groups = () => {
               </Box>
             </ListItem>
           </ListItem>
+          <Divider component="li" />
           <ListItem disablePadding sx={{margin: '-11px'}}>
             <ListItem>
              
@@ -57,6 +59,7 @@ const Groups = () => {
               </Box>
             </ListItem>
           </ListItem>
+          <Divider component="li" />
           <ListItem disablePadding sx={{margin: '-11px'}}>
             <ListItem>
              
@@ -72,6 +75,7 @@ const Groups = () => {
               </Box>
             </ListItem>
           </ListItem>
+          <Divider component="li" />
           <ListItem disablePadding sx={{margin: '-11px'}}>
             <ListItem>
               

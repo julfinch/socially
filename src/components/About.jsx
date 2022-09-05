@@ -8,7 +8,7 @@ import MoreHorizOutlinedIcon from '@mui/icons-material/MoreHorizOutlined';
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#151728' : '#fff',
   ...theme.typography.body2,
-  padding: theme.spacing(0),
+  padding: theme.spacing(1),
   height: '25vh',
   color: theme.palette.text.secondary,
 }));
@@ -17,29 +17,30 @@ const About = () => {
   return (
     <>
       <Item flex={1}>
-        <Box pl={2} pt={2} pr={2} sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+        
+        <List aria-label="about me" sx={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '95%' }}>
+        <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
           <Typography sx={{ fontSize: '1rem', fontWeight: 'bold', }}>
             About Me
           </Typography>
           <MoreHorizOutlinedIcon/>
         </Box>
-        <List aria-label="about me" >
           <ListItem disablePadding>
             <ListItem>
               <ListItemIcon>
-                <BusinessCenterOutlinedIcon fontSize={'small'} />
+                <BusinessCenterOutlinedIcon fontSize={'small'} sx={{ marginLeft: '-15px'}} />
               </ListItemIcon>
-              <Typography margin={-3} sx={{ fontSize: '0.8rem',  }}>
-                Nationalist, Writer, Polymath
+              <Typography margin={-5} sx={{ fontSize: '0.8rem',  }}>
+                Nationalist and Writer
               </Typography>
             </ListItem>
           </ListItem>
           <ListItem disablePadding>
             <ListItem>
               <ListItemIcon>
-                <HomeOutlinedIcon fontSize={'small'}/>
+                <HomeOutlinedIcon fontSize={'small'} sx={{ marginLeft: '-15px'}}/>
               </ListItemIcon>
-              <Typography margin={-3} sx={{ fontSize: '0.8rem', }}>
+              <Typography margin={-5} sx={{ fontSize: '0.8rem', }}>
                 Currently living in Manila
               </Typography>
             </ListItem>
@@ -47,10 +48,10 @@ const About = () => {
           <ListItem disablePadding>
             <ListItem>
               <ListItemIcon>
-                <SportsBasketballOutlinedIcon fontSize={'small'}/>
+                <SportsBasketballOutlinedIcon fontSize={'small'} sx={{ marginLeft: '-15px'}}/>
               </ListItemIcon>
-              <Typography margin={-3} sx={{ fontSize: '0.8rem', }}>
-                Loves Fencing, Wrestling, Women
+              <Typography margin={-5} sx={{ fontSize: '0.8rem', }}>
+                Loves Fencing and Women
               </Typography>
             </ListItem>
           </ListItem>
