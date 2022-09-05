@@ -38,10 +38,10 @@ const Header = () => {
                       src={profile}
                       sx={{ width: {xs: 130,sm: 170}, height: {xs: 130,sm: 170}, position: 'absolute', top: {xs: 80,sm: 80}, left: 20, border: '3px solid #151728' }}
                     />
-                    <Typography sx={{fontSize: '1.3rem', position: 'absolute', top: 130, left:  {xs: 160,sm: 210}, color: '#fff', fontWeight: 'bold',}}>
+                    <Typography sx={{fontSize: '1.3rem', position: 'absolute', top: 160, left:  {xs: 160,sm: 210}, color: '#fff', fontWeight: 'bold',}}>
                       Dr. José Rizal
                     </Typography>
-                    <Stack direction="row" spacing={1} sx={{position: 'absolute', top: 160, left:  {xs: 160,sm: 210}}}>
+                    <Stack direction="row" spacing={1} sx={{position: 'absolute', top: 190, left:  {xs: 160,sm: 210}}}>
                       <Typography sx={{fontSize: '0.9rem', color: '#fff',}}>
                         @j_riz1861
                       </Typography>
@@ -55,7 +55,7 @@ const Header = () => {
                         <ChatBubbleOutlineOutlinedIcon fontSize="small" sx={{color: '#fff'}} />
                       </IconButton>
                     </Stack>
-                    <Stack direction="column" sx={{ position: 'absolute', top: 150, right: 10}}>
+                    <Stack direction="column" sx={{ position: 'absolute', bottom: 20, right: 10}}>
                       <Typography sx={{fontSize: '1.9rem', color: '#fff'}}>
                         4,038
                       </Typography>
