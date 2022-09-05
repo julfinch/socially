@@ -22,12 +22,12 @@ const LatestUpload = () => {
   return (
     <>
       <Item flex={1}>
-        <Box pl={2} pt={2} pr={2} sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+        <Box pt={1} pr={2} sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
           <Typography sx={{ fontSize: '1rem', fontWeight: 'bold', }}>
             Latest Upload
           </Typography>
         </Box>
-        <ImageList cols={5} rowHeight={90} gap={5} sx={{paddingTop: 2, paddingBottom: 1, paddingLeft: 0.7,paddingRight: 0.7, }}>
+        <ImageList cols={5} rowHeight={110} gap={4} sx={{paddingTop: 2, paddingBottom: 1, }}>
           <ImageListItem>
             <img
               src={image1}
