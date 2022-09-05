@@ -35,6 +35,9 @@ const Stat = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#24273B' : '#fff',
   color: theme.palette.text.secondary,
   height: '10vh',
+  [theme.breakpoints.down("lg")]: {
+    height: '7vh',
+  },
 }));
 
 const Convo = styled(Paper)(({ theme }) => ({
@@ -48,8 +51,8 @@ const Conversations = styled(Paper)(({ theme }) => ({
 
 const Rightbar = () => {
   return (
-    <Item flex={1.6} sx={{width: 300, padding: 2, display: { xs: "none", sm: "block" } }}>
-      <Box position="fixed" width={300}>
+    <Item flex={1.6} sx={{width: {md: 250, lg: 300}, padding: 2, display: { xs: "none", sm: "block" } }}>
+      <Box position="fixed"  sx={{width: {md: 250, lg: 300}}}>
         <Typography sx={{ fontSize: '1rem', fontWeight: 'bold', marginTop: '-10px' }}>
           Online Friends
         </Typography>
@@ -168,46 +171,64 @@ const Rightbar = () => {
         </Typography>
 
         <Convo sx={{ borderRadius: '10px',width: '100%', maxWidth: 360, marginTop: '-1px' }}>
-      <ListItem alignItems="flex-start">
-        <ListItemAvatar>
+      <ListItem sx={{ display: 'flex', flexDirection: { md: 'column', lg: 'row'}, alignItems: { md: 'center', lg: 'flex-start'} }}>
+        <ListItemAvatar sx={{ marginTop: {md: '0px', lg: '10px'}}}>
           <Avatar alt="Segunda Katigbak" src={segunda} />
         </ListItemAvatar>
         <ListItemText
-          primary="Ikaw lang ang nag-iisang babaeng mahal ko…pramis 💖❤😘"
+          primary={
+            <>
+              <Typography
+                sx={{ display: 'inline', fontWeight: 'bold', fontSize: '0.8rem'}}
+                color="text.primary"
+              >
+                "Ikaw lng ang nag-iisang babaeng mahal q, pramis 😘"
+              </Typography>            
+            </>
+          }
           secondary={
             <>
               <Typography
-                sx={{ display: 'inline' }}
+                sx={{ display: 'inline', fontSize: '0.8rem' }}
                 component="span"
-                variant="body2"
+                variant="body"
                 color="text.primary"
               >
-                to Segunda, Leonor Valenzuela, Leonor Rivera, Consuelo, O-Sei San, Gertrude, Nelly, Suzanne and Josephine
+                to Segunda, Leonor Valenzuela, Leonor Rivera, Consuelo, O-Sei San, Gertrude, Nelly, Suzanne and Josephine — Weh?🤪...See More
               </Typography>
-              {" — Weh?🤪...See More"}
             </>
           }
         />
       </ListItem>
       
-      <Divider variant="inset" component="li" sx={{listStyleType: 'none'}}/>
-      <ListItem alignItems="flex-start">
-        <ListItemAvatar>
+      <Divider component="li" sx={{listStyleType: 'none'}}/>
+      <ListItem sx={{ display: 'flex', flexDirection: { md: 'column', lg: 'row'}, alignItems: { md: 'center', lg: 'flex-start'} }}>
+        <ListItemAvatar sx={{ marginTop: {md: '0px', lg: '10px'}}}>
           <Avatar alt="Apolinario Mabini" src={apolinario} />
         </ListItemAvatar>
         <ListItemText 
-          primary="Bruv, galing mo mag-breakdance kagabi 😮👏"
-          secondary={
+          primary={
             <>
               <Typography
-                sx={{ display: 'inline' }}
+                sx={{ display: 'inline', fontWeight: 'bold', fontSize: '0.8rem'}}
                 component="span"
                 variant="body2"
                 color="text.primary"
               >
-                Apolinario Mabini
+                "Bruv, galing mo mag-breakdance kagabi 😮👏"
+              </Typography>            
+            </>
+          }
+          secondary={
+            <>
+              <Typography
+                sx={{ display: 'inline', fontSize: '0.8rem' }}
+                component="span"
+                variant="body2"
+                color="text.primary"
+              >
+                Apolinario Mabini — Uhhmm...sure ka ako yun? 😵🤷‍♂️
               </Typography>
-              {" — Uhhmm...sure ka ako yun? 😵🤷‍♂️"}
             </>
           }
         />

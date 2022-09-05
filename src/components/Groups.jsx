@@ -18,12 +18,13 @@ const Img = styled('img')({
   objectFit: 'stretch',
   width: '30px',
   height: '30px',
+  marginLeft: '-15px',
 });
 
 const Groups = () => {
   return (
     <>
-      <Item>
+      <Item flex={1}>
         <Box pl={1} pr={1} sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
           <Typography sx={{ fontSize: '1rem', fontWeight: 'bold', }}>
             Groups
@@ -36,7 +37,7 @@ const Groups = () => {
               <ListItemIcon>
                 <Img src={image1} alt="Katipunan101" />
               </ListItemIcon>
-              <Box sx={{margin: '-9px'}}>
+              <Box sx={{margin: '-29px'}}>
               <Typography sx={{ fontSize: '0.8rem',  }}>
                 Katipunan101
               </Typography>
@@ -52,7 +53,7 @@ const Groups = () => {
               <ListItemIcon>
                 <Img src={image2} alt="La Liga Filipina" />
               </ListItemIcon>
-              <Box sx={{margin: '-9px'}}>
+              <Box sx={{margin: '-29px'}}>
               <Typography sx={{ fontSize: '0.8rem', }}>
                 La Liga Filipina
               </Typography>
@@ -68,7 +69,7 @@ const Groups = () => {
               <ListItemIcon>
                 <Img src={image3} alt="Tinola Connoisseurs" />
               </ListItemIcon>
-              <Box sx={{margin: '-9px'}}>
+              <Box sx={{margin: '-29px'}}>
               <Typography sx={{ fontSize: '0.8rem', }}>
                 Tinola Connoisseurs
               </Typography>
@@ -84,7 +85,7 @@ const Groups = () => {
               <ListItemIcon>
                 <Img src={image4} alt="DMCI Condo Owners" />
               </ListItemIcon>
-              <Box sx={{margin: '-9px'}}>
+              <Box sx={{margin: '-29px'}}>
               <Typography sx={{ fontSize: '0.8rem', }}>
                 DMCI Condo Owners
               </Typography>

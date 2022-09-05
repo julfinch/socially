@@ -16,7 +16,7 @@ const Item = styled(Paper)(({ theme }) => ({
 const About = () => {
   return (
     <>
-      <Item>
+      <Item flex={1}>
         <Box pl={2} pt={2} pr={2} sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
           <Typography sx={{ fontSize: '1rem', fontWeight: 'bold', }}>
             About Me
@@ -27,10 +27,10 @@ const About = () => {
           <ListItem disablePadding>
             <ListItem>
               <ListItemIcon>
-                <BusinessCenterOutlinedIcon fontSize={'small'}/>
+                <BusinessCenterOutlinedIcon fontSize={'small'} />
               </ListItemIcon>
               <Typography margin={-3} sx={{ fontSize: '0.8rem',  }}>
-                Nationalist, Writer, and Polymath
+                Nationalist, Writer, Polymath
               </Typography>
             </ListItem>
           </ListItem>

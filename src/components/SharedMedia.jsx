@@ -23,7 +23,7 @@ const Img = styled('img')({
 const Groups = () => {
   return (
     <>
-      <Item>
+      <Item flex={1}>
         <Box pl={1} pr={1} sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
           <Typography sx={{ fontSize: '1rem', fontWeight: 'bold', }}>
             Shared Media
@@ -37,9 +37,9 @@ const Groups = () => {
         <List aria-label="shared media">
           <ListItem disablePadding sx={{margin: '-7px'}}>
             <ListItem>
-              <Button variant="outlined">
+              
               <DescriptionIcon fontSize={'small'}/>
-              </Button>
+             
               <Box ml={2}>
               <Typography sx={{ fontSize: '0.8rem',   }}>
                 Noli_mi_Tangere.pdf
@@ -52,9 +52,9 @@ const Groups = () => {
           </ListItem>
           <ListItem disablePadding sx={{margin: '-7px'}}>
             <ListItem>
-              <Button  variant="outlined">
+             
               <AudiotrackIcon fontSize={'small'}/>
-              </Button>
+              
               <Box ml={2}>
               <Typography sx={{ fontSize: '0.8rem',  }}>
                 Rebellion_Podcast.zip
@@ -67,9 +67,9 @@ const Groups = () => {
           </ListItem>
           <ListItem disablePadding sx={{margin: '-7px'}}>
             <ListItem>
-              <Button  variant="outlined">
+             
               <PhotoIcon fontSize={'small'}/>
-              </Button>
+              
               <Box ml={2}>
               <Typography sx={{ fontSize: '0.8rem',  }}>
                 Josephine_Bracken.png
@@ -82,9 +82,9 @@ const Groups = () => {
           </ListItem>
           <ListItem disablePadding sx={{margin: '-7px'}}>
             <ListItem>
-              <Button  variant="outlined" sx={{width:'5px'}}>
+              
               <VideoFileIcon fontSize={'small'}/>
-              </Button>
+              
               <Box ml={2}>
               <Typography sx={{ fontSize: '0.8rem',  }}>
                 Fencing.mp4

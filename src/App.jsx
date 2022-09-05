@@ -25,7 +25,7 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <Item color={"text.primary"}>
         <Navbar />
-        <Stack direction="row" spacing={2} justifyContent="space-between">
+        <Stack direction="row" spacing={2} justifyContent="space-between" sx={{paddingRight: {xs: '20px', md: '0px'}, paddingBottom: {xs: '20px', md: '0px'}}}>
         <Sidebar setMode={setMode} mode={mode}/>
           <Feed />
           <Rightbar />

@@ -36,12 +36,12 @@ const Header = () => {
                     <Avatar
                       alt="Jose Rizal"
                       src={profile}
-                      sx={{ width: 170, height: 170, position: 'absolute', top: 80, left: 20, border: '3px solid #151728' }}
+                      sx={{ width: {xs: 130,sm: 170}, height: {xs: 130,sm: 170}, position: 'absolute', top: {xs: 80,sm: 80}, left: 20, border: '3px solid #151728' }}
                     />
-                    <Typography sx={{fontSize: '1.3rem', position: 'absolute', top: 130, left: 210, color: '#fff', fontWeight: 'bold',}}>
-                      José Protasio Rizal Mercado y Alonso Realonda
+                    <Typography sx={{fontSize: '1.3rem', position: 'absolute', top: 130, left:  {xs: 160,sm: 210}, color: '#fff', fontWeight: 'bold',}}>
+                      Dr. José Rizal
                     </Typography>
-                    <Stack direction="row" spacing={1} sx={{position: 'absolute', top: 160, left: 210}}>
+                    <Stack direction="row" spacing={1} sx={{position: 'absolute', top: 160, left:  {xs: 160,sm: 210}}}>
                       <Typography sx={{fontSize: '0.9rem', color: '#fff',}}>
                         @j_riz1861
                       </Typography>

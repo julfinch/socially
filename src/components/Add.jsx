@@ -20,6 +20,7 @@ import {
   VideoCameraBack,
 } from "@mui/icons-material";
 import { Box } from "@mui/system";
+import profile from "../images/profile_photo.jpg"
 
 const SytledModal = styled(Modal)({
   display: "flex",
@@ -70,11 +71,11 @@ const Add = () => {
           </Typography>
           <UserBox>
             <Avatar
-              src="https://images.pexels.com/photos/846741/pexels-photo-846741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              src={profile}
               sx={{ width: 30, height: 30 }}
             />
             <Typography fontWeight={500} variant="span">
-              John Doe
+              Dr. Jose Rizal
             </Typography>
           </UserBox>
           <TextField

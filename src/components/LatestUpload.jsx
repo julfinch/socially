@@ -21,7 +21,7 @@ const Item = styled(Paper)(({ theme }) => ({
 const LatestUpload = () => {
   return (
     <>
-      <Item>
+      <Item flex={1}>
         <Box pl={2} pt={2} pr={2} sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
           <Typography sx={{ fontSize: '1rem', fontWeight: 'bold', }}>
             Latest Upload

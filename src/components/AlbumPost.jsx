@@ -40,7 +40,7 @@ const AlbumPost = () => {
             <MoreVert />
           </IconButton>
         }
-        title="José Protasio Rizal Mercado y Alonso Realonda"
+        title="Dr. José Rizal"
         subheader="January 15, 1892"
       />
       <ImageList cols={2} row={1} rowHeight={260} gap={5}>

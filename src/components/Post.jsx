@@ -34,7 +34,7 @@ const Post = () => {
             <MoreVert />
           </IconButton>
         }
-        title="José Protasio Rizal Mercado y Alonso Realonda"
+        title="Dr. José Rizal"
         subheader="November 14, 1891"
       />
       <CardMedia

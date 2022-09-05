@@ -27,7 +27,7 @@ const Events = styled(Paper)(({ theme }) => ({
 }));
 
 const Img = styled('img')({
-  objectFit: 'stretch',
+  objectFit: 'cover',
   width: '100%',
   height: '25vh',
 });
@@ -55,29 +55,29 @@ const Feed = () => {
             <Box gridColumn="span 12">
               <Header/>
             </Box>
-            <Box gridColumn="span 4">
+            <Box sx={{gridColumn: {xs: 'span 12', md: 'span 4'}}}>
               <About/>
             </Box>
-            <Box gridColumn="span 8">
+            <Box sx={{gridColumn: {xs: 'span 12', md: 'span 8'}}}>
               <LatestUpload />
             </Box>
-            <Box gridColumn="span 4">
+            <Box sx={{gridColumn: {xs: 'span 12', md: 'span 4'}}}>
               <Events>
               <Grid container direction="column">
                   <Grid item>
                     <Img src={event} alt="upcoming event" />
                   </Grid>
                   <Grid item>
-                    <Typography sx={{ fontSize: '1rem', fontWeight: 'bold', }}>Upcoming: Rebellion Party</Typography>
+                    <Typography sx={{ fontSize: {md: '0.8rem',lg:'1rem'}, fontWeight: 'bold', }}>Upcoming: Rebellion Party</Typography>
                     <Typography sx={{ fontSize: '0.8rem', }}>March 2, 1892 11:00PM</Typography>
                   </Grid>
                 </Grid>
               </Events>
             </Box>
-            <Box gridColumn="span 4">
+            <Box sx={{gridColumn: {xs: 'span 12', md: 'span 4'}}}>
               <Groups/>
             </Box>
-            <Box gridColumn="span 4">
+            <Box sx={{gridColumn: {xs: 'span 12', md: 'span 4'}}}>
               <SharedMedia/>
             </Box>
             <Box gridColumn="span 12">
