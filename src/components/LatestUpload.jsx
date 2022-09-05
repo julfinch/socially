@@ -5,7 +5,7 @@ import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import SportsBasketballOutlinedIcon from '@mui/icons-material/SportsBasketballOutlined';
 
 import image1 from "../images/latest_1.jpg";
-import image2 from "../images/latest_2.jpg";
+import image2 from "../images/latest_2.png";
 import image3 from "../images/latest_3.jpg";
 import image4 from "../images/latest_4.jpg";
 import image5 from "../images/latest_5.jpg";
