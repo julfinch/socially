@@ -91,7 +91,7 @@ const Rightbar = () => {
             src={avatar5}
           />
         </AvatarGroup>
-        <Typography sx={{ fontSize: '1rem', fontWeight: 'bold', }} mt={1} >
+        <Typography sx={{ fontSize: '1rem', fontWeight: 'bold', }} mt={0} >
           Weekly Stats
         </Typography>
 
@@ -194,7 +194,7 @@ const Rightbar = () => {
                 variant="body"
                 color="text.primary"
               >
-                to Segunda, Leonor Valenzuela, Leonor Rivera, Consuelo, O-Sei San, Gertrude, Nelly, Suzanne and Josephine — Weh?🤪...See More
+                to Segunda Katigbak, Leonor Valenzuela, Leonor Rivera, Consuelo Ortiga, O-Sei San, Gertrude Beckette, Nelly Boustead, Suzanne Jacoby and Josephine Bracken — Weh?🤪...See More
               </Typography>
             </>
           }
