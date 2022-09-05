@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Grid, Paper, styled, Stack, Tabs, Tab, Avatar, Box, Typography, IconButton, Button } from "@mui/material";
-import header from "../images/header_1.jpg";
+import header from "../images/header_1.png";
 import profile from "../images/profile_photo.jpg";
 import PersonAddAlt1OutlinedIcon from '@mui/icons-material/PersonAddAlt1Outlined';
 import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';
