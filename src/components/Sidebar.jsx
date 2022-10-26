@@ -92,7 +92,7 @@ const Sidebar = ({mode,setMode}) => {
               <ListItemIcon>
                 <ModeNight />
               </ListItemIcon>
-              <Switch onChange={e=>setMode(mode === "light" ? "dark" : "light")}/>
+              <Switch onChange={e=>setMode(mode === "dark" ? "light" : "dark")}/>
             </ListItemButton>
           </ListItem>
         </List>

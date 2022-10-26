@@ -14,7 +14,7 @@ const Item = styled(Box)(({ theme }) => ({
 }));
 
 function App() {
-  const [mode, setMode] = useState("light");
+  const [mode, setMode] = useState("dark");
 
   const darkTheme = createTheme({
     palette: {
