@@ -31,7 +31,7 @@ const About = () => {
                 <BusinessCenterOutlinedIcon fontSize={'small'} sx={{ marginLeft: '-15px'}} />
               </ListItemIcon>
               <Typography margin={-5} sx={{ fontSize: '0.8rem',  }}>
-                Nationalist and Writer
+                Nationalist
               </Typography>
             </ListItem>
           </ListItem>
@@ -41,7 +41,7 @@ const About = () => {
                 <HomeOutlinedIcon fontSize={'small'} sx={{ marginLeft: '-15px'}}/>
               </ListItemIcon>
               <Typography margin={-5} sx={{ fontSize: '0.8rem', }}>
-                Currently living in Manila
+                Manila
               </Typography>
             </ListItem>
           </ListItem>
@@ -51,7 +51,7 @@ const About = () => {
                 <SportsBasketballOutlinedIcon fontSize={'small'} sx={{ marginLeft: '-15px'}}/>
               </ListItemIcon>
               <Typography margin={-5} sx={{ fontSize: '0.8rem', }}>
-                Loves Fencing and Women
+                Loves Women
               </Typography>
             </ListItem>
           </ListItem>

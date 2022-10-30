@@ -36,12 +36,12 @@ const Header = () => {
                     <Avatar
                       alt="Jose Rizal"
                       src={profile}
-                      sx={{ width: {xs: 130,md: 150,lg: 170}, height: {xs: 130,md: 150,lg: 170}, position: 'absolute', top: {xs: 80,sm: 80}, left: 20, border: '3px solid #151728' }}
+                      sx={{ width: {xs: 130,md: 130,lg: 170}, height: {xs: 130,md: 130,lg: 170}, position: 'absolute', top: {xs: 80,sm: 80, md: 130, lg: 95}, left: {md: 5, lg:20}, border: '3px solid #151728' }}
                     />
-                    <Typography sx={{fontSize: '1.3rem', position: 'absolute', top: 160, left:  {xs: 160,sm: 210}, color: '#fff', fontWeight: 'bold',}}>
+                    <Typography sx={{fontSize: '1.3rem', position: 'absolute', top: {xs: 205, md: 205, lg: 160}, left:  {xs: 160,sm: 210, md: 150, lg: 225}, color: '#fff', fontWeight: 'bold',}}>
                       Dr. José Rizal
                     </Typography>
-                    <Stack direction="row" spacing={1} sx={{position: 'absolute', top: 190, left:  {xs: 160,sm: 210}}}>
+                    <Stack direction="row" spacing={1} sx={{position: 'absolute', top: {xs: 236, md: 236, lg:190}, left:  {xs: 160,sm: 210, md: 150, lg: 225}}}>
                       <Typography sx={{fontSize: '0.9rem', color: '#fff',}}>
                         @j_riz1861
                       </Typography>
@@ -66,7 +66,7 @@ const Header = () => {
 
                   </Grid>
                   <Grid item>
-                    <Tabs value={value} onChange={handleChange} centered sx={{textTransform: 'lowercase', height: '10px',}}>
+                    <Tabs value={value} onChange={handleChange} centered sx={{textTransform: 'lowercase', height: {md: '55px', lg: '10px'},}}>
                       <Tab label="About" value="1"/>
                       <Tab label="Timeline" value="2"/>
                       <Tab label="Friends" />
